@@ -8,38 +8,75 @@
     <title>Meu carrinho - Candy</title>
 </head>
 <body>
+    <header>
+        <div>
+            <img src="Imagens/LOGO.png" alt="Logo da loja Candy escrito em rosa.">
+        </div>
+        <div>
+            <div>
+                <img src="" alt="Ícone de lupa para realizar pesquisas">
+            </div>
+            <div>Menu</div>
+        </div>
+        <div>
+            <div>
+                <img src="" alt="Ícone do carrinho para acessar suas compras">
+            </div>
+            <div>
+                <a href="">Login</a>
+                <a href="">Cadastre-se</a>
+            </div>
+        </div>
+    </header>
     <main>
         <h1>Meu carrinho</h1>
+        <h2 id="QuantidadeDeProdutos">0</h2>
         <h2>produtos</h2>
-        <div class="carrinhoVazio">
+        <section class="carrinhoVazio">
               <ul class="CarrinhoLista">
                 <li class="CarrinhoItem">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <a href="">
+                        <img class="ImagemProduto" src="" alt="">
+                    </a>
+                    <img class= "CorProduto" src="" alt="">
+                    <p Class=" TamanhoProduto">PP</p>
+                    <p Class="Quantidade">0</p>
+                    <button Class="ExcluirProduto">X</button>
                 </li>
-                <li></li>
+        </section>
 
-        </div>
-        <div class="dadosCarrinho">
-             <label for="">Subtotal</label>
-            <label>Cupom de desconto</label>
+        <section class="dadosCarrinho">
+             <p>Subtotal</p>
+             <p id="ValorSubtotal">0</p>
+            <p>Cupom de desconto</p>
             <input type="Caso tenha um cupom de desconto, digite aqui">
-            <label for="">CEP de entrega</label>
+            <p>CEP de entrega</p>
             <input type="Digite o CEP de entrega aqui">
-            <label for="">Rua</label>
+            <p>Logradouro</p>
             <input type="Digite o nome da rua aqui">
-            <label for="">Número</label>
+            <p>Número</p>
             <input type="Digite o número da residência aqui">
-            <label for="">Complemento</label>
+            <p>Complemento</p>
             <input type="Digite o complemento da residência aqui">
-            <label for="">Cidade</label>
+            <p>Cidade</p>
             <input type="Digite a cidade da entrega aqui">
-            <label for="">Estado</label>
+            <p>Estado</p>
             <input type="Digite o estado da entrega aqui">
-            <Label>Total</Label>
-        </div>
+            <p>Total</p>
+            <p id="ValorTotal">0</p>
+        </section>
         <button>Finalizar Carrinho</button>
     </main>
+    <footer>
+        <img src="Imagens/LOGO.png" alt="Logo da loja Candy escrito em rosa.">
+        <a href="">Newsletter</a>
+        <a href="">Contato</a>
+        <a href="">Redes Sociais</a>
+        <a href="">Condições Legais e Privacidade</a>
+        <a href="">Carreiras</a>
+        <a href="">Mapa do Site</a>
+        <p>Rua da Boa Vontade, 300. Cajuzinho - SP</p>
+    </footer>
     <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
