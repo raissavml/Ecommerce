@@ -74,7 +74,7 @@ class Item{
             quantidade ++
         }
         else {
-           quantidade --
+            quantidade --
         }
         elementoQuantidade.innerHTML = quantidade
     }
