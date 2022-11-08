@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.carrossel{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    outline: 3px solid black;
+    margin: 50px auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+}
+
+.carrossel div{
+    display: flex;
+    list-style: none;
+    width: 3600px;
+    height: 500px;
+}
+
+.carrossel img{
+    position: relative;
+    animation: slide 15s infinite ease-in-out;
+}
+
+@keyframes slide{
+    0%{left: 0px;}
+
+    30%{left: -1200px;}
+
+    60%{left: -2400px;}
+}
