@@ -4,7 +4,7 @@
 }
 
 .carrossel{
-    width: 500px;
+    width: 1500px;
     height: 500px;
     overflow: hidden;
     outline: 3px solid black;
@@ -27,7 +27,9 @@
 @keyframes slide{
     0%{left: 0px;}
 
-    30%{left: -1200px;}
+    30%{left: -900px;}
 
-    60%{left: -2400px;}
+    60%{left: -1250px;}
+
+    100%{right: 0px;}
 }
