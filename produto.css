@@ -118,13 +118,19 @@ table {
 	border-spacing: 0;
 }
 
+/*começo de código*/
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*parte da header*/
+
 header {
-    background-color: #4CC9F0;
+    background-color: #CCD5AE;
 }
+
+/*parte da header*/
 
 .logo {
     text-align: center;
@@ -143,6 +149,8 @@ header {
     margin-left: 150px;
 }
 
-.footer {
-    background-color: #4361EE;
+/*parte do footer*/
+
+footer {
+    background-color: #E9EDC9;
 }
