@@ -45,7 +45,6 @@ class Carrinho {
     atualizarCarrinho(){
         this.subtotal = 0
         this.total = 0
-
         this.itens.map((item)=>{
             this.subtotal += item.preco * item.quantidade;
             this.total += item.subtotal + item.frete - item.desconto
@@ -64,38 +63,58 @@ class Item{
         this.quantidade = quantidade
         this.preco = preco
     }
-
-}
-
-    function alteraQuantidade(somar, id){        
-        const elementoQuantidade = document.getElementById(id)
-        let quantidade = Number(elementoQuantidade.innerHTML)
+//proposta de solução futura para alterar quantidade de produtos, ainda ineficaz //
+/*     function alteraQuantidade(somar, sku){        
+        let index = this.item.findIndex(item => item.sku == sku)
+        let this.quantidade = Number(elementoQuantidade.innerHTML)
         if (somar){
-            quantidade ++
+            this.quantidade ++
         }
         else {
+         if ( quantidade <= 0) {
+             return
+            }
             quantidade --
-        }
-        elementoQuantidade.innerHTML = quantidade
+      }
+        elementoQuantidade.innerHTML = this.quantidade
+    } */
+}
+//alterar quantidade de produtos atual, de forma ineficiente, porém funcional //
+ function alteraQuantidade(somar, id){        
+    const elementoQuantidade = document.getElementById(id)
+    let quantidade = Number(elementoQuantidade.innerHTML)
+    if (somar){
+        quantidade ++
     }
+    else {
+        if ( quantidade <= 0) {
+            return
+        }
+        quantidade --
+    }
+    elementoQuantidade.innerHTML = quantidade
+}
+//estrutura para deletar códigos do html
+/* function click(){                     
+    document.getELementById('avo').remove();                    
+     document.getElementById('avo').remove(); 
+} */
 
 /* Criar carrinho */
 let meuCarrinho = new Carrinho();
 
 /* criar ítens provisórios para teste*/
 let Item1 = new Item("Blusinha", [], [pp,p,m,g,gg], [], 0, 50.00);
-/* let Item2 = new Item("Mascara", 1, 10);
-let Item3 = new Item("Base", 1, 25);
- */
+
 /* Atualizar preço da entrega sem busca de cep inicialmente */
 meuCarrinho.atualizarEntrega(10);
 meuCarrinho.atualizarImposto(5);
 
 /* Adicionar ítens */
 meuCarrinho.adicionarCarrinho(Item1);
-meuCarrinho.adicionarCarrinho(Item2);
-meuCarrinho.adicionarCarrinho(Item3);
+/* meuCarrinho.adicionarCarrinho(Item2);
+meuCarrinho.adicionarCarrinho(Item3); */
 
-meuCarrinho.removerCarrinho(meuCarrinho.itens[1].sku)
+/* meuCarrinho.removerCarrinho(meuCarrinho.itens[1].sku) */
 console.log(meuCarrinho)
 console.log(retornaTotal(meuCarrinho))
