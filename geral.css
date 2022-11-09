@@ -29,17 +29,31 @@ header {
 
 .login>a {
 	text-decoration: none;
-	color: black;
+	color: #D4A373;
 }
 
 .icone-carrinho {
-    text-align: right;
+   width: 40px;
 }
 
 .procurar {
-    margin-left: 150px;
+    text-align: left;
+    margin-left: 20px;
+    font-size: x-large;
 }
 
+.navegadores {
+    text-align: right;
+    margin-right: 20px;
+    font-size: x-large;
+}
+.menu {
+width: 40px;
+}
+#pesquisa {
+width: 200px;
+height: 20px;
+}
 /*fim da header*/
 
 /*começo do footer*/
@@ -50,4 +64,13 @@ footer {
 
 .palavras-chaves-footer {
 	font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    text-align: center;
+}
+#endereco{
+    text-align: right;
+}
+
+.itemFooter{
+    margin-left: 10px;
 }

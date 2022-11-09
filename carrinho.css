@@ -1,0 +1,39 @@
+main {
+    background: #FEFAE0;
+}
+
+h1 {
+    color: #D4A373;
+}
+
+h2 {
+    color: #D4A373;
+}
+
+h4 {
+    color: #D4A373;
+}
+
+p {
+    color: #D4A373;
+    }
+a {
+    color: #D4A373; 
+    text-decoration: none;
+}
+.ImagemProduto {
+    float: left;
+    width: 200px;
+    position: relative;
+}
+
+.carrinhoVazio {
+margin-bottom: 30px;
+position: relative;
+}
+
+.listaCarrinho{
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+}
