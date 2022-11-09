@@ -27,6 +27,7 @@ class Carrinho {
         }
         else{
             this.itens.splice(index, 1)
+            remove()
             console.log("Valor removido")
         }
     }
@@ -107,7 +108,7 @@ let meuCarrinho = new Carrinho();
 let Item1 = new Item("Blusinha", [], [pp,p,m,g,gg], [], 0, 50.00);
 
 /* Atualizar preço da entrega sem busca de cep inicialmente */
-meuCarrinho.atualizarEntrega(10);
+meuCarrinho.atualizarFrete(10);
 meuCarrinho.atualizarImposto(5);
 
 /* Adicionar ítens */
