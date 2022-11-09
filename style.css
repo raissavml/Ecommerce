@@ -37,15 +37,3 @@
 
     100%{right: 0px;}
 }
-
-header{
-    display: flex;
-}
-
-section{
-    display: flex;
-}
-
-footer {
-    display: flex;
-}
