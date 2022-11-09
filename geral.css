@@ -124,19 +124,18 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*parte da header*/
+/*começo da header*/
 
 header {
     background-color: #CCD5AE;
 }
-
-/*parte da header*/
 
 .logo {
     text-align: center;
 }
 
 .login {
+	font-family: 'Bebas Neue', cursive;
     text-align: right;
 }
 
@@ -149,8 +148,14 @@ header {
     margin-left: 150px;
 }
 
-/*parte do footer*/
+/*fim da header*/
+
+/*começo do footer*/
 
 footer {
     background-color: #E9EDC9;
+}
+
+.palavras-chaves-footer {
+	font-family: 'Bebas Neue', cursive;
 }
