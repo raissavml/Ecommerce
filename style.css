@@ -21,15 +21,31 @@
 
 .carrossel img{
     position: relative;
-    animation: slide 15s infinite ease-in-out;
+    animation: slide 18s infinite ease-in-out; 
 }
 
 @keyframes slide{
     0%{left: 0px;}
 
-    30%{left: -900px;}
+    20%{left: -700px;}
 
-    60%{left: -1250px;}
+    40%{left: -1200px;}
+
+    60%{right: 1200px;}
+
+    80%{right: 700px;}
 
     100%{right: 0px;}
+}
+
+header{
+    display: flex;
+}
+
+section{
+    display: flex;
+}
+
+footer {
+    display: flex;
 }
