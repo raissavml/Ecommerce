@@ -43,11 +43,11 @@ section {
 }
 
 figure {
-    height: 491px;
-    width: 491px;
+    height: 420px;
+    width: 420px;
     overflow: hidden;
     outline: 3px solid black;
-    margin: 15px;
+    margin: 56px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
     border-radius: 20px 20px 20px 20px;
 }
@@ -60,8 +60,8 @@ h1 {
 }
 
 figure img{
-    height: 490px;
-    width: 490px;
+    height: 100%;
+    width: 100%;
     position: relative;
     background-color: #E9EDC9;
 }
