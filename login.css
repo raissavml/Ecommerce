@@ -18,10 +18,16 @@ section a{
     margin: 65px;
 }
 
-section input{
+section input{  
     margin: 15px;
     padding: 8px;
     margin-left: 56px;
+}
+
+section img{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
 }
 
 .button{
