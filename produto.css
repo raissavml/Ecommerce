@@ -134,6 +134,10 @@ header {
     text-align: center;
 }
 
+.logo img{
+    width: 200px;
+}
+
 .login {
 	font-family: 'Bebas Neue', cursive;
     text-align: right;
@@ -156,6 +160,19 @@ footer {
     background-color: #E9EDC9;
 }
 
+footer img{
+    width: 150px;
+}
+
 .palavras-chaves-footer {
 	font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    text-align: center;
+}
+#endereco{
+    text-align: right;
+}
+
+.itemFooter{
+    margin-left: 10px;
 }

@@ -21,10 +21,13 @@ header {
     text-align: center;
 }
 
+.logo img{
+    width: 200px;
+}
+
 .login {
 	font-family: 'Bebas Neue', cursive;
     text-align: right;
-
 }
 
 .login>a {
@@ -33,7 +36,7 @@ header {
 }
 
 .icone-carrinho {
-   width: 40px;
+    width: 40px;
 }
 
 .procurar {
@@ -60,6 +63,10 @@ height: 20px;
 
 footer {
     background-color: #E9EDC9;
+}
+
+footer img{
+    width: 150px;
 }
 
 .palavras-chaves-footer {

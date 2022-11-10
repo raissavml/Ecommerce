@@ -37,3 +37,31 @@
 
     100%{right: 0px;}
 }
+
+section {
+    display: flex;
+}
+
+figure {
+    height: 420px;
+    width: 420px;
+    overflow: hidden;
+    outline: 3px solid black;
+    margin: 56px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 20px 20px 20px 20px;
+}
+
+h1 {
+    color: #D4A373;
+    text-align: center;
+    border-color: solid;
+    background-color: #CCD5AE;  
+}
+
+figure img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #E9EDC9;
+}
