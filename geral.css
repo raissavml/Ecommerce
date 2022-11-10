@@ -14,7 +14,7 @@ body {
 
 header {
     background-color: #CCD5AE;
-
+	display: block;
 }
 
 .logo {
@@ -50,11 +50,9 @@ header {
     margin-right: 20px;
     font-size: x-large;
 }
-
 .menu {
 width: 40px;
 }
-
 #pesquisa {
 width: 200px;
 height: 20px;
@@ -64,14 +62,11 @@ height: 20px;
 /*começo do footer*/
 
 footer {
-    font-weight: 700;
     background-color: #E9EDC9;
 }
 
-footer a img{
-    align-items: center;
+footer img{
     width: 150px;
-
 }
 
 .palavras-chaves-footer {
@@ -79,15 +74,10 @@ footer a img{
     text-decoration: none;
     text-align: center;
 }
-
 #endereco{
-    text-align: center;
-    margin-top: 20px;
-    padding: auto;
+    text-align: right;
 }
 
 .itemFooter{
-    color: black;
-    text-decoration: none;
     margin-left: 10px;
 }
