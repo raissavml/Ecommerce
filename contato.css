@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+}
+
+figure {
+    height: 391px;
+    width: 391px;
+    overflow: hidden;
+    outline: 3px solid black;
+    margin: 70px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 20px 20px 20px 20px;
+}
+
+h1 {
+    color: #D4A373;
+    text-align: center;
+    border-color: solid;
+    height: 32px;
+    width: 391px;
+    overflow: hidden;
+    outline: 3px solid black;
+    margin: 70px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 20px 20px 20px 20px;
+    background-color: #CCD5AE;
+}
+
+figure img{
+    height: 390px;
+    width: 390px;
+    position: relative;
+    background-color: #E9EDC9;
+}
