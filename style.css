@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+
 }
 
 
@@ -13,69 +15,71 @@ body {
 /*começo da header*/
 
 header {
-    background-color: #CCD5AE;
-	display: block;
+    background-color: aquamarine;
+    height: 300px;
 }
 
 .logo {
     text-align: center;
+    padding-top: 100px;
 }
 
-.logo img{
-    width: 200px;
+.nome-logo {
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    bottom: 450px;
+    left: 0;
+}
+
+.carrinho {
+    position: absolute;
+    bottom: 450px;
+    right: 0;
 }
 
 .login {
-	font-family: 'Bebas Neue', cursive;
-    text-align: right;
+    margin: 10vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
 }
 
-.login>a {
-	text-decoration: none;
-	color: #D4A373;
+.cadastro {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
 }
 
-.icone-carrinho {
-    width: 40px;
-}
 
-.procurar {
-    text-align: left;
-    margin-left: 20px;
-    font-size: x-large;
-}
 
-.navegadores {
-    text-align: right;
-    margin-right: 20px;
-    font-size: x-large;
-}
-.menu {
-width: 40px;
-}
-#pesquisa {
-width: 200px;
-height: 20px;
-}
 /*fim da header*/
 
 /*começo do footer*/
 
 footer {
-    background-color: #E9EDC9;
+    background-color: aquamarine;
 }
 
-footer img{
-    width: 150px;
+footer h1{
+    color: black;
+    
 }
 
 .palavras-chaves-footer {
+    color: black;
 	font-family: 'Bebas Neue', cursive;
     text-decoration: none;
     text-align: center;
 }
 #endereco{
-    text-align: right;
+    text-align: center;
+    font-weight: 700;
 }
 
 .itemFooter{
