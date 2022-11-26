@@ -8,6 +8,7 @@ h1 {
 
 h2 {
     color: #D4A373;
+    padding-left: 0.5em;
 }
 
 h4 {
@@ -21,20 +22,61 @@ a {
     color: #D4A373; 
     text-decoration: none;
 }
+.CarrinhoLista{
+margin: 5%;
+
+}
+.carrinhoCount{
+    justify-content: space-around;
+    align-items: center;
+}
+.CarrinhoItem{
+    list-style-type: none;
+    display: flex;
+
+}
+.DetalhesProduto {
+margin-left: 3%;
+margin-right: 3%;
+}
+.PreferenciasCliente p{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+ height: 8px;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+.CarrinhoItem button{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+line-height: 18px;
+}
 .ImagemProduto {
-    float: left;
     width: 200px;
-    position: relative;
+}
+.CorProduto{
+border-radius: 50%;
+width: 36px;
+height: 36px;
 }
 
 .carrinhoVazio {
-margin-bottom: 30px;
-position: relative;
+
 }
 
 .listaCarrinho{
-    position: absolute;
     bottom: 30px;
     text-align: center;
 }
-/* teste/*  */ 
+.dadosCarrinho input{
+    min-width: 220px;
+    height: 2em;
+    align-items: center;
+}
+.dadosCarrinho{
+    margin: 5%;
+    text-align: center;
+}
