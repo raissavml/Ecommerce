@@ -1,5 +1,12 @@
+* {
+	margin: 0;
+	padding: 0; 
+}
+
 main {
     background: #FEFAE0;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 h1 {
@@ -23,8 +30,7 @@ a {
     text-decoration: none;
 }
 .CarrinhoLista{
-margin: 5%;
-
+    margin: 5%;
 }
 .carrinhoCount{
     justify-content: space-around;
@@ -36,13 +42,13 @@ margin: 5%;
 
 }
 .DetalhesProduto {
-margin-left: 3%;
-margin-right: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .PreferenciasCliente p{
     margin-left: 0.5em;
     margin-right: 0.5em;
- height: 8px;
+    height: 8px;
     align-items: center;
     margin-bottom: 0;
     margin-top: 4px;
@@ -52,19 +58,34 @@ margin-right: 3%;
     width: 36px;
     height: 36px;
     padding: 0;
-line-height: 18px;
+    line-height: 18px;
+    background-color: #D4A373;
+    color: #FEFAE0;
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
+button:hover {
+    background-color: #d4a373ec;
+    transition: 300ms;
+}
+
 .ImagemProduto {
     width: 200px;
 }
 .CorProduto{
-border-radius: 50%;
-width: 36px;
-height: 36px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
 }
 
-.carrinhoVazio {
-
+.DadosCart {
+    justify-content: space-around;
+    align-items: center;
+}
+.carrinhoInput{
+    justify-content:flex-end;
+    align-items: center;
 }
 
 .listaCarrinho{
@@ -72,11 +93,128 @@ height: 36px;
     text-align: center;
 }
 .dadosCarrinho input{
-    min-width: 220px;
+    width: 24em;
     height: 2em;
-    align-items: center;
+;
+}
+.carrinhoInput p{
+    margin-right: 2em;
 }
 .dadosCarrinho{
     margin: 5%;
     text-align: center;
 }
+
+.finalizarCompra{
+    align-self: flex-end;
+    width: 20em;
+    height: 3em;
+    margin-right: 20em;
+    border-radius: 60px;
+    background-color: #D4A373;
+    color: #FEFAE0;
+    border: none;
+}
+.singleInput{
+    display: flex;
+justify-content: center;
+}
+.singleInput p{
+margin-right: 2em;
+}
+.dubleInput{
+    display: flex;
+justify-content: space-around;
+}
+.dubleInput p{
+margin-right: 1em;
+}
+.dubleInput input{
+    margin-right: 1em;
+}
+.organizeInput{
+    width: 40em;
+    display:flex;
+    justify-content: space-around;
+}
+
+/*começo de código*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*começo da header*/
+
+header {
+    background-color: #CCD5AE;
+	display: block;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.login {
+	font-family: 'Bebas Neue', cursive;
+    text-align: right;
+}
+
+.login>a {
+	text-decoration: none;
+	color: #D4A373;
+}
+
+.icone-carrinho {
+    width: 40px;
+}
+
+.procurar {
+    text-align: left;
+    margin-left: 20px;
+    font-size: x-large;
+}
+
+.navegadores {
+    text-align: right;
+    margin-right: 20px;
+    font-size: x-large;
+    margin-bottom: 0;
+}
+.menu {
+    width: 40px;
+}
+#pesquisa {
+    width: 200px;
+    height: 20px;
+}
+/*fim da header*/
+
+/*começo do footer*/
+
+footer {
+    background-color: #E9EDC9;
+}
+
+footer img{
+    width: 150px;
+}
+
+.palavras-chaves-footer {
+	font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    text-align: center;
+}
+#endereco{
+    text-align: right;
+}
+
+.itemFooter{
+    margin-left: 10px;
+}
+
+/*fim do footer*/
