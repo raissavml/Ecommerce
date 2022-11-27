@@ -1,6 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0; 
 }
 
 
@@ -84,51 +84,16 @@ footer img{
 
 /*fim do footer*/
 
-.carrossel{
-    width: 1500px;
-    height: 500px;
-    overflow: hidden;
-    outline: 3px solid black;
-    margin: 50px auto;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
-}
-
-.carrossel div{
-    display: flex;
-    list-style: none;
-    width: 3600px;
-    height: 500px;
-}
-
-.carrossel img{
-    position: relative;
-    animation: slide 18s infinite ease-in-out; 
-}
-
-@keyframes slide{
-    0%{left: 0px;}
-
-    20%{left: -700px;}
-
-    40%{left: -1200px;}
-
-    60%{right: 1200px;}
-
-    80%{right: 700px;}
-
-    100%{right: 0px;}
-}
-
 section {
     display: flex;
 }
 
 figure {
-    height: 420px;
-    width: 420px;
+    height: 391px;
+    width: 391px;
     overflow: hidden;
     outline: 3px solid black;
-    margin: 56px;
+    margin: 70px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
     border-radius: 20px 20px 20px 20px;
 }
@@ -137,12 +102,19 @@ h1 {
     color: #D4A373;
     text-align: center;
     border-color: solid;
-    background-color: #CCD5AE;  
+    height: 32px;
+    width: 391px;
+    overflow: hidden;
+    outline: 3px solid black;
+    margin: 70px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 20px 20px 20px 20px;
+    background-color: #CCD5AE;
 }
 
 figure img{
-    height: 100%;
-    width: 100%;
+    height: 390px;
+    width: 390px;
     position: relative;
     background-color: #E9EDC9;
 }
