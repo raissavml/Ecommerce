@@ -15,8 +15,12 @@ body {
 header {
     background-color: #CCD5AE;
 	display: block;
+    padding-bottom: 2em;
 }
-
+header a{
+    text-decoration: none;
+    color: #D4A373;
+}
 .logo {
     text-align: center;
 }
@@ -28,11 +32,6 @@ header {
 .login {
 	font-family: 'Bebas Neue', cursive;
     text-align: right;
-}
-
-.login>a {
-	text-decoration: none;
-	color: #D4A373;
 }
 
 .icone-carrinho {
@@ -48,14 +47,30 @@ header {
 .navegadores {
     text-align: right;
     margin-right: 20px;
-    font-size: x-large;
+    font-size: 2.2em;
+    margin-bottom: 0;
+}
+.login:hover {
+    color: #d4a373da;
+    transition: 300ms;
 }
 .menu {
-width: 40px;
+    width: 40px;
 }
 #pesquisa {
-width: 200px;
-height: 20px;
+    width: 30em;
+    height: 2em;
+    border-radius: 60px;
+    border: none;
+    color: #D4A373;
+    background-color: #FEFAE0;
+    text-align: center;
+}
+.funcionalidadesHeader{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 /*fim da header*/
 
@@ -63,25 +78,40 @@ height: 20px;
 
 footer {
     background-color: #E9EDC9;
+    padding-bottom: 3em;
 }
 
 footer img{
     width: 150px;
+    margin-left: 3em;
 }
 
 .palavras-chaves-footer {
 	font-family: 'Bebas Neue', cursive;
     text-decoration: none;
+    color: #D4A373;
     text-align: center;
+}
+.palavras-chaves-footer a{
+    text-decoration: none;
+    color: #D4A373;
 }
 #endereco{
     text-align: right;
+    margin-bottom: 0;
+    margin-right: 3em;
+    font-size: 1.5em;
 }
 
 .itemFooter{
-    margin-left: 10px;
+    margin-left: 3em;
+    font-size: 1.8em;
 }
 
+.itemFooter:hover {
+    color: #d4a373da;
+    transition: 300ms;
+}
 /*fim do footer*/
 
 section {
