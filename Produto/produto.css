@@ -51,9 +51,10 @@ header a{
     margin-bottom: 0;
 }
 .login:hover {
-    color: #d4a373da;
+    color: #FEFAE0;
     transition: 300ms;
 }
+
 .menu {
     width: 40px;
 }
@@ -109,7 +110,7 @@ footer img{
 }
 
 .itemFooter:hover {
-    color: #d4a373da;
+    color: #FEFAE0;
     transition: 300ms;
 }
 /*fim do footer*/
