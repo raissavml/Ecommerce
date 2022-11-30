@@ -1,3 +1,38 @@
+// Aplicação API //
+
+const cep = document.querySelector("#cep");
+
+const options = {
+    method: 'GET',
+    mode: 'cors',
+    cache: 'default'
+}
+
+const showData = (result) => {
+    for (const campo in result){
+        if(document.querySelector("#"+campo)){
+            document.querySelector("#"+campo).value = result[campo];
+        }
+    }
+}
+
+cep.addEventListener("blur", (e) => {
+    console.log(cep.value);
+    let search = cep.value.replace("-", "");
+
+    fetch(`https://viacep.com.br/ws/${search}/json/`, options)
+    .then(response => {
+        response.json()
+        .then(data => {
+            console.log(data)
+            showData(data)
+        })
+    })
+    .catch(e => {
+        console.log("Erro: "+e)
+    })
+})
+
 // Função que controla o carrinho //
 class Carrinho {
     constructor(itens = [], subtotal = 0, frete = 0, logradouro = "", numero = "", complemento = "", cidade = "", estado = "", total = 0, imposto = 0, desconto = 0)

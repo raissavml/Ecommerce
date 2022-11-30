@@ -73,51 +73,62 @@
             <ul>
                 <div class="d-flex carrinhoCount">
                     <p>Subtotal</p>
-                    <p id="ValorSubtotal">0,00</p>     
+                    <div>
+                        <p>R$</p>  
+                    <p id="ValorSubtotal">0,00</p>                           
+                    </div>                    
                 </div>
                 <form action="">
                     <div class="singleInput">
-                        <p>Cupom de desconto</p>
-                     <input placeholder="Caso tenha um cupom de desconto, digite aqui">
+                        <label>Cupom de desconto</label>
+                     <input type="text" placeholder="Caso tenha um cupom de desconto, digite aqui" id="cupomDesconto">
                     </div>
                     <div class="dubleInput">
                         <div class="organizeInput">
-                            <p>CEP de entrega</p>
-                            <input placeholder="Digite o CEP de entrega">
+                            <label>CEP de entrega</label>
+                            <input type="text" placeholder="Digite o CEP de entrega" id="cep">
                         </div>
                         <div class="organizeInput">
-                            <p>Logradouro</p>
-                            <input placeholder="Digite o nome da rua">
-                        </div>
-                    </div>
-                    <div class="dubleInput">
-                        <div class="organizeInput">
-                        <p>Número</p>
-                        <input placeholder="Digite o número da residência">
-                        </div>
-                        <div class="organizeInput">
-                        <p>Complemento</p>
-                        <input placeholder="Digite o complemento da residência">
+                            <label>Logradouro</label>
+                            <input type="text" placeholder="Digite o nome da rua" id="logradouro">
                         </div>
                     </div>
                     <div class="dubleInput">
                         <div class="organizeInput">
-                        <p>Cidade</p>
-                        <input placeholder="Digite a cidade da entrega">
+                        <label>Número</label>
+                        <input type="text" placeholder="Digite o número da residência" id="numero">
                         </div>
                         <div class="organizeInput">
-                        <p>Estado</p>
-                        <input placeholder="Digite o estado da entrega">
+                        <label>Complemento</label>
+                        <input type="text" placeholder="Digite o complemento da residência" id="complemento">
+                        </div>
+                    </div>
+                    <div class="dubleInput">
+                        <div class="organizeInput">
+                        <label>Cidade</label>
+                        <input type="text" placeholder="Digite a cidade da entrega" id="localidade">
+                        </div>
+                        <div class="organizeInput">
+                        <label>Estado</label>
+                        <input type="text" placeholder="Digite o estado da entrega" id="uf">
                         </div>
                     </div>
                 </form>
                 <div class="d-flex carrinhoCount">
                     <p>Frete</p>
-                    <p id="Frete">0,00</p>                   
+                    <div>
+                        <p>R$</p>  
+                        <p id="Frete">0,00</p>                            
+                    </div>
+               
                 </div>
                 <div class="d-flex carrinhoCount total">
                     <p>Total</p>
-                    <p class="total" id="ValorTotal">0,00</p>  
+                    <div>
+                        <p>R$</p>  
+                        <p class="total" id="ValorTotal">0,00</p>                          
+                    </div>                    
+
                 </div>
 
             </ul>
