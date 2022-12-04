@@ -1,12 +1,18 @@
 * {
 	margin: 0;
 	padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 main {
     background: #FEFAE0;
     padding-top: 5em;
     padding-bottom: 5em;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -35,6 +41,8 @@ a {
 .carrinhoCount{
     justify-content: space-around;
     align-items: center;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 .CarrinhoItem{
     list-style-type: none;
@@ -96,6 +104,7 @@ button:hover {
 .dadosCarrinho input{
     width: 24em;
     height: 2em;
+    font-size: 1.1em
 ;
 }
 .carrinhoInput p{
@@ -111,9 +120,10 @@ button:hover {
     text-align: center;
     color: #D4A373;
 }
-.dadosCarrinho p{
+.dadosCarrinho label{
     font-weight: bold;
-    font-size: 1,3em;
+    font-size: 1.3em;
+    color: #D4A373;   
 }
 .finalizarCompra{
     align-self: flex-end;
@@ -128,8 +138,9 @@ button:hover {
 .singleInput{
     display: flex;
     justify-content: center;
+
 }
-.singleInput p{
+.singleInput label{
     margin-right: 2em;
 }
 .dubleInput{
@@ -152,118 +163,12 @@ button:hover {
     font-size: 1.5em;
 }
 
-/*começo de código*/
-
-body {
-    font-family: 'Montserrat', sans-serif;
+@media screen and (max-width: 800px) {
+form {
+    flex-direction: column
+}
 }
 
-/*começo da header*/
-
-header {
-    background-color: #CCD5AE;
-	display: block;
-    padding-bottom: 2em;
-}
-header a{
-    text-decoration: none;
-    color: #D4A373;
-}
-.logo {
-    text-align: center;
-}
-
-.logo img{
-    width: 200px;
-}
-
-.login {
-	font-family: 'Bebas Neue', cursive;
-    text-align: right;
-}
-
-.icone-carrinho {
-    width: 40px;
-}
-
-.procurar {
-    text-align: left;
-    margin-left: 20px;
-    font-size: x-large;
-    vertical-align: middle;
-}
-
-.navegadores {
-    text-align: right;
-    margin-right: 20px;
-    font-size: 2.2em;
-    margin-bottom: 0;
-}
-.login:hover {
-    color: #FEFAE0;
-    transition: 300ms;
-}
-
-.menu {
-    width: 40px;
-}
-#pesquisa {
-    width: 42em;
-    height: 2.5em;
-    border-radius: 60px;
-    border: none;
-    color: #D4A373;
-    background-color: #FEFAE0;
-    text-align: center;
-    font-size: large;
+@media screen and (max-width: 575px){
 
 }
-.funcionalidadesHeader{
-    display:flex;
-    justify-content: space-between;
-    margin-left: 2em;
-    margin-right: 2em;
-}
-/*fim da header*/
-
-/*começo do footer*/
-
-footer {
-    background-color: #E9EDC9;
-    padding-bottom: 3em;
-}
-
-footer img{
-    width: 150px;
-    margin-left: 3em;
-}
-
-.palavras-chaves-footer {
-	font-family: 'Bebas Neue', cursive;
-    text-decoration: none;
-    color: #D4A373;
-    text-align: center;
-}
-.palavras-chaves-footer a{
-    text-decoration: none;
-    color: #D4A373;
-}
-
-#endereco{
-    text-align: right;
-    margin-bottom: 0;
-    margin-right: 3em;
-    font-size: 1.5em;
-    color: #D4A373;
-}
-
-.itemFooter{
-    margin-left: 3em;
-    font-size: 1.8em;
-}
-
-.itemFooter:hover {
-    color: #FEFAE0;
-    transition: 300ms;
-}
-/*fim do footer*/

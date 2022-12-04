@@ -55,7 +55,10 @@
                     </a>
                     <div class="DetalhesProduto">
                         <h4 class = "nome produto">Camisa branca com listras cinzas, botões e textura</h4>
-                        <p Class="PrecoProduto">R$100,00</p>
+                        <div class="d-flex">
+                            <p>R$</p>
+                            <p Class="PrecoProduto">100,00</p>                            
+                        </div>
                         <div class="d-flex PreferenciasCliente">
                             <img class= "CorProduto" src="../Imagens/Geral/corcamisalistrada.png" alt="Cor selecionada: Branco e cinza">
                             <p Class="TamanhoProduto">PP</p>
@@ -73,7 +76,7 @@
             <ul>
                 <div class="d-flex carrinhoCount">
                     <p>Subtotal</p>
-                    <div class="d-flex">
+                    <div class="d-flex justify-content-center aling-itens-center">
                         <p>R$</p>  
                     <p id="ValorSubtotal">0,00</p>                           
                     </div>                    
@@ -116,16 +119,16 @@
                 </form>
                 <div class="d-flex carrinhoCount">
                     <p>Frete</p>
-                    <div class="d-flex">
+                    <div class="d-flex aling-itens-center">
                         <p>R$</p>  
                         <p id="Frete">0,00</p>                            
                     </div>
                
                 </div>
                 <div class="d-flex carrinhoCount total">
-                    <p>Total</p>
-                    <div class="d-flex">
-                        <p>R$</p>  
+                    <p class="total">Total</p>
+                    <div class="d-flex justify-content-center aling-itens-center">
+                        <p class="total">R$</p>  
                         <p class="total" id="ValorTotal">0,00</p>                          
                     </div>                    
 

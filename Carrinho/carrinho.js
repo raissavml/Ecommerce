@@ -54,12 +54,12 @@ class Carrinho {
        let quantidadeProdutos = Number(quantidadeDeProdutos.innerHTML)
        let indicadorDeProdutos = text(indicadorProdutos.innerHTML)
 
-            if(this.itens.lenght=0){
-                quantidadeProdutos = itens.lenght
+            if(this.itens.lenght == 0){
+                quantidadeProdutos = this.itens.lenght
                 indicadorDeProdutos = "produto"
             }
             else{
-                quantidadeProdutos = itens.lenght
+                quantidadeProdutos = this.itens.lenght
                 indicadorDeProdutos = "produtos"                 
             }
        quantidadeDeProdutos.innerHTML = quantidadeProdutos
