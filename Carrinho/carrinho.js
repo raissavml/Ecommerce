@@ -1,4 +1,4 @@
-// Aplicação API //
+// Aplicação API busca CEP//
 
 const cep = document.querySelector("#cep");
 
@@ -48,10 +48,28 @@ class Carrinho {
         this.imposto = imposto
         this.desconto = desconto
     }
+    atualizarQuantidadeProdutos(){
+       const quantidadeDeProdutos = querySelector("#quantidadeDeProdutos")
+       const indicadorProdutos = querySelector("#indicadorProdutos")
+       let quantidadeProdutos = Number(quantidadeDeProdutos.innerHTML)
+       let indicadorDeProdutos = text(indicadorProdutos.innerHTML)
+
+            if(this.itens.lenght=0){
+                quantidadeProdutos = itens.lenght
+                indicadorDeProdutos = "produto"
+            }
+            else{
+                quantidadeProdutos = itens.lenght
+                indicadorDeProdutos = "produtos"                 
+            }
+       quantidadeDeProdutos.innerHTML = quantidadeProdutos
+       indicadorProdutos.innerHTML = indicadorDeProdutos
+    }
 
     adicionarCarrinho(item){
         this.itens.push(item)
         this.atualizarCarrinho()
+        this.atualizarQuantidadeProdutos()
     }
 
     removerCarrinho(sku){
@@ -135,22 +153,22 @@ class Item{
     document.getELementById('avo').remove();                    
      document.getElementById('avo').remove(); 
 } */
-
+/* 
 /* Criar carrinho */
-let meuCarrinho = new Carrinho();
+/* let meuCarrinho = new Carrinho(); */
 
 /* criar ítens provisórios para teste*/
-let Item1 = new Item("Blusinha", [], [pp,p,m,g,gg], [], 0, 50.00);
-
+/* let Item1 = new Item("Blusinha", [], [pp,p,m,g,gg], [], 0, 50.00);
+ */
 /* Atualizar preço da entrega sem busca de cep inicialmente */
-meuCarrinho.atualizarFrete(10);
-meuCarrinho.atualizarImposto(5);
+/* meuCarrinho.atualizarFrete(10);
+meuCarrinho.atualizarImposto(5); */
 
 /* Adicionar ítens */
-meuCarrinho.adicionarCarrinho(Item1);
+/* meuCarrinho.adicionarCarrinho(Item1); */
 /* meuCarrinho.adicionarCarrinho(Item2);
 meuCarrinho.adicionarCarrinho(Item3); */
 
 /* meuCarrinho.removerCarrinho(meuCarrinho.itens[1].sku) */
-console.log(meuCarrinho)
-console.log(retornaTotal(meuCarrinho))
+/* console.log(meuCarrinho)
+console.log(retornaTotal(meuCarrinho)) */

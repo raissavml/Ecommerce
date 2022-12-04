@@ -42,8 +42,8 @@
         <section class="d-flex carrinhoCount">
                 <h1>Meu carrinho</h1>  
             <div class="d-flex justify-content-space-around aling-itens-center">
-                <h2 id="QuantidadeDeProdutos">0</h2>
-                <h2>produtos</h2>            
+                <h2 id="QuantidadeDeProdutos" type="number">1</h2>
+                <h2 id="indicadorProdutos" type="text">produtos</h2>            
             </div>
         </section>
     <div>
@@ -73,7 +73,7 @@
             <ul>
                 <div class="d-flex carrinhoCount">
                     <p>Subtotal</p>
-                    <div>
+                    <div class="d-flex">
                         <p>R$</p>  
                     <p id="ValorSubtotal">0,00</p>                           
                     </div>                    
@@ -100,7 +100,7 @@
                         </div>
                         <div class="organizeInput">
                         <label>Complemento</label>
-                        <input type="text" placeholder="Digite o complemento da residência" id="complemento">
+                        <input type="text" placeholder="Digite o complemento da residência" id="complementoEndereco">
                         </div>
                     </div>
                     <div class="dubleInput">
@@ -116,7 +116,7 @@
                 </form>
                 <div class="d-flex carrinhoCount">
                     <p>Frete</p>
-                    <div>
+                    <div class="d-flex">
                         <p>R$</p>  
                         <p id="Frete">0,00</p>                            
                     </div>
@@ -124,7 +124,7 @@
                 </div>
                 <div class="d-flex carrinhoCount total">
                     <p>Total</p>
-                    <div>
+                    <div class="d-flex">
                         <p>R$</p>  
                         <p class="total" id="ValorTotal">0,00</p>                          
                     </div>                    
