@@ -17,6 +17,7 @@ main {
 
 h1 {
     color: #D4A373;
+    margin-left: 2em;
 }
 
 h2 {
@@ -163,12 +164,49 @@ button:hover {
     font-size: 1.5em;
 }
 
-@media screen and (max-width: 800px) {
-form {
-    flex-direction: column
+@media screen and (max-width: 1100px) {
+.carrinhoCount{
+    justify-content: space-between;
+    margin-right: 2em;
 }
+.singleInput {
+    justify-content: flex-start;
 }
-
-@media screen and (max-width: 575px){
-
+    .dubleInput {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.dubleInput label{
+    margin-right: 2em;
+}
+.organizeInput{
+    justify-content: flex-start;
+}
+.CarrinhoItem{
+flex-direction: column;
+}
+.ExcluirProduto{
+   margin-top: 2em;
+}
+.nomeProduto{
+    margin-top: 1em;
+ }
+}
+@media screen and (max-width: 700px){
+    .singleleInput {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .organizeInput{
+       flex-direction: column;
+       justify-content: center;
+    }
+    .form > label{
+        width: 5em;
+        float: left;
+    }
+    form > input{
+        justify-content: center;       
+    }
 }
