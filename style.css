@@ -159,7 +159,7 @@ footer img{
 
 .carrossel img{
     position: relative;
-    animation: slide 18s infinite ease-in-out; 
+    animation: slide 16s infinite ease-in-out; 
 }
 
 @keyframes slide{
