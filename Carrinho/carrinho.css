@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    background: #FEFAE0;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #D4A373;
+    margin-left: 2em;
+}
+
+h2 {
+    color: #D4A373;
+    padding-left: 0.5em;
+}
+
+h4 {
+    color: #D4A373;
+}
+
+p {
+    color: #D4A373;
+    }
+a {
+    color: #D4A373; 
+    text-decoration: none;
+}
+.CarrinhoLista{
+    margin: 5%;
+}
+.carrinhoCount{
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.CarrinhoItem{
+    list-style-type: none;
+    display: flex;
+
+}
+.DetalhesProduto {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.PreferenciasCliente p{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    height: 8px;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+.CarrinhoItem button{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    line-height: 18px;
+    background-color: #D4A373;
+    color: #FEFAE0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+button:hover {
+    background-color: #CCD5AE;
+    color: #D4A373;
+    transition: 300ms;
+}
+
+.ImagemProduto {
+    width: 200px;
+}
+.CorProduto{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+
+.DadosCart {
+    justify-content: space-around;
+    align-items: center;
+}
+.carrinhoInput{
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.listaCarrinho{
+    bottom: 30px;
+    text-align: center;
+}
+.dadosCarrinho input{
+    width: 24em;
+    height: 2em;
+    font-size: 1.1em
+;
+}
+.carrinhoInput p{
+    margin-right: 2em;
+}
+.dadosCarrinho{
+    margin: 5%;
+    text-align: center;
+}
+.dadosCarrinho input{
+    border-radius: 60px;
+    border: none;
+    text-align: center;
+    color: #D4A373;
+}
+.dadosCarrinho label{
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #D4A373;   
+}
+.finalizarCompra{
+    align-self: flex-end;
+    width: 20em;
+    height: 3em;
+    margin-right: 20em;
+    border-radius: 60px;
+    background-color: #D4A373;
+    color: #FEFAE0;
+    border: none;
+}
+.singleInput{
+    display: flex;
+    justify-content: center;
+
+}
+.singleInput label{
+    margin-right: 2em;
+}
+.dubleInput{
+    display: flex;
+    justify-content: space-around;
+}
+.dubleInput p{
+    margin-right: 1em;
+}
+.dubleInput input{
+    margin-right: 0.5em;
+}
+.organizeInput{
+    width: 40em;
+    display:flex;
+    justify-content: space-between;
+
+}
+.total{
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1100px) {
+.carrinhoCount{
+    justify-content: space-between;
+    margin-right: 2em;
+}
+.singleInput {
+    justify-content: flex-start;
+}
+    .dubleInput {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.dubleInput label{
+    margin-right: 2em;
+}
+.organizeInput{
+    justify-content: flex-start;
+}
+.CarrinhoItem{
+flex-direction: column;
+}
+.ExcluirProduto{
+   margin-top: 2em;
+}
+.nomeProduto{
+    margin-top: 1em;
+ }
+}
+@media screen and (max-width: 700px){
+    .singleleInput {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .organizeInput{
+       flex-direction: column;
+       justify-content: center;
+    }
+    .form > label{
+        width: 5em;
+        float: left;
+    }
+    form > input{
+        justify-content: center;       
+    }
+}

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="geral.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -19,22 +20,21 @@
                 <p class="nome-logo">FRAGATTA</p>
             </a>
         </div>
-        <div class="barra">
-            <ul class="menu">                
-                <a>
-                    <img src="Imagens/icones/icone-menu.png" alt="icone do menu">   
+        <div class="funcionalidadesHeader">
+            <ul class="procurar" >                
+                <a href="">
+                    <img class="menu" src="Imagens/icones/icone-menu.png" alt="icone do menu">   
                 </a>
-                <img src="Imagens/icones/icone-lupa.png" alt="icone de lupa para realizar pesquisa">
-                <input type="text" placeholder="O que você está procurando?">
+                <img class="menu"  src="Imagens/icones/icone-lupa.png" alt="ícone de lupa para realizar pesquisa">
+                <input id="pesquisa" type="text" placeholder="O que você está procurando?">
             </ul>
-            <ul class="carrinho">
-                <a href="carrinho.html">
-                    <img src="Imagens/icones/icone-carrinho.png" alt="icone do carrinho para acessar suas compras">   
+
+            <ul class="navegadores">
+                <a href="Carrinho/carrinho.html">
+                    <img class="icone-carrinho" src="Imagens/icones/icone-carrinho.png" alt="icone do carrinho para acessar suas compras">   
                 </a>
-                <div>
-                <a class="login" href="login.html">Login</a>
-                <a class="cadastro" href="">Cadastro</a>
-                </div>
+                <a class="login" href="Login/login.html">Login</a>
+                <a class="login" href="">Cadastre-se</a>
             </ul>
         </div>
     </header>
@@ -49,25 +49,25 @@
     <h1 class="moda-masculina">Moda Masculina</h1>
     <section>
         <div class="camisa-masc">
-            <a href="produto.html">
+            <a href="Produto/produto.html">
                 <figure>
-                    <img src="./Imagens/camisa_masc.png" alt="Camisa-masculina">
+                    <img src="Imagens/Geral/camisa_masc.png" alt="Camisa-masculina">
                 </figure>
             </a>
         </div>
         
         <div class="calca-masc">    
-            <a href="produto.html">
+            <a href="Produto/produto.html">
                 <figure>
-                    <img src="./Imagens/Calça_masc.png" alt="Calça-masculina">
+                    <img src="Imagens/Geral/Calça_masc.png" alt="Calça-masculina">
                 </figure>
             </a>
         </div>
 
         <div class="destaques-masc">
-            <a href="produto.html">
+            <a href="Produto/produto.html">
                 <figure>
-                    <img src="./Imagens/destaque.png" alt="Destaques-masculinos">
+                    <img src="Imagens/Geral/destaque.png" alt="Destaques-masculinos">
                 </figure>
                 </a>
         </div>
@@ -75,25 +75,25 @@
         <h1 class="moda-feminina">Moda Feminina</h1>
     <section>        
         <div class="camisa-fem">
-            <a href="produto.html">
+            <a href="Produto/produto.html">
                 <figure>
-                    <img src="./Imagens/Camisa_fem.png" alt="Camisa-feminina">
+                    <img src="Imagens/Geral/Camisa_fem.png" alt="Camisa-feminina">
                 </figure>
             </a>
         </div> 
         
         <div class="calca-fem">
-            <a href="produto.html">
+            <a href="Produto/produto.html">
                 <figure>
-                    <img src="./Imagens/Calça_fem.png" alt="Calça-feminina">
+                    <img src="Imagens/Geral/Calça_fem.png" alt="Calça-feminina">
                 </figure>
             </a>
         </div>
 
         <div class="destaque-fem">
-            <a href="produto.html">
+            <a href="Produto/produto.html">
                 <figure>
-                    <img src="./Imagens/destaque.png" alt="Destaques-femininos">
+                    <img src="Imagens/Geral/destaque.png" alt="Destaques-femininos">
                 </figure>
             </a>
         </div>
@@ -106,7 +106,7 @@
             </a>
             <ul>
                 <a class="itemFooter" href="">Newsletter</a>
-                <a class="itemFooter" href="contato.html">Contato</a>
+                <a class="itemFooter" href="Contato/contato.html">Contato</a>
                 <a class="itemFooter" href="">Redes Sociais</a>
                 <a class="itemFooter" href="">Condições Legais e Privacidade</a>
                 <a class="itemFooter" href="">Carreiras</a>

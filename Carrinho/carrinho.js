@@ -1,3 +1,38 @@
+// Aplicação API busca CEP//
+
+const cep = document.querySelector("#cep");
+
+const options = {
+    method: 'GET',
+    mode: 'cors',
+    cache: 'default'
+}
+
+const showData = (result) => {
+    for (const campo in result){
+        if(document.querySelector("#"+campo)){
+            document.querySelector("#"+campo).value = result[campo];
+        }
+    }
+}
+
+cep.addEventListener("blur", (e) => {
+    console.log(cep.value);
+    let search = cep.value.replace("-", "");
+
+    fetch(`https://viacep.com.br/ws/${search}/json/`, options)
+    .then(response => {
+        response.json()
+        .then(data => {
+            console.log(data)
+            showData(data)
+        })
+    })
+    .catch(e => {
+        console.log("Erro: "+e)
+    })
+})
+
 // Função que controla o carrinho //
 class Carrinho {
     constructor(itens = [], subtotal = 0, frete = 0, logradouro = "", numero = "", complemento = "", cidade = "", estado = "", total = 0, imposto = 0, desconto = 0)
@@ -13,10 +48,28 @@ class Carrinho {
         this.imposto = imposto
         this.desconto = desconto
     }
+    atualizarQuantidadeProdutos(){
+       const quantidadeDeProdutos = querySelector("#quantidadeDeProdutos")
+       const indicadorProdutos = querySelector("#indicadorProdutos")
+       let quantidadeProdutos = Number(quantidadeDeProdutos.innerHTML)
+       let indicadorDeProdutos = text(indicadorProdutos.innerHTML)
+
+            if(this.itens.lenght == 0){
+                quantidadeProdutos = this.itens.lenght
+                indicadorDeProdutos = "produto"
+            }
+            else{
+                quantidadeProdutos = this.itens.lenght
+                indicadorDeProdutos = "produtos"                 
+            }
+       quantidadeDeProdutos.innerHTML = quantidadeProdutos
+       indicadorProdutos.innerHTML = indicadorDeProdutos
+    }
 
     adicionarCarrinho(item){
         this.itens.push(item)
         this.atualizarCarrinho()
+        this.atualizarQuantidadeProdutos()
     }
 
     removerCarrinho(sku){
@@ -100,22 +153,22 @@ class Item{
     document.getELementById('avo').remove();                    
      document.getElementById('avo').remove(); 
 } */
-
+/* 
 /* Criar carrinho */
-let meuCarrinho = new Carrinho();
+/* let meuCarrinho = new Carrinho(); */
 
 /* criar ítens provisórios para teste*/
-let Item1 = new Item("Blusinha", [], [pp,p,m,g,gg], [], 0, 50.00);
-
+/* let Item1 = new Item("Blusinha", [], [pp,p,m,g,gg], [], 0, 50.00);
+ */
 /* Atualizar preço da entrega sem busca de cep inicialmente */
-meuCarrinho.atualizarFrete(10);
-meuCarrinho.atualizarImposto(5);
+/* meuCarrinho.atualizarFrete(10);
+meuCarrinho.atualizarImposto(5); */
 
 /* Adicionar ítens */
-meuCarrinho.adicionarCarrinho(Item1);
+/* meuCarrinho.adicionarCarrinho(Item1); */
 /* meuCarrinho.adicionarCarrinho(Item2);
 meuCarrinho.adicionarCarrinho(Item3); */
 
 /* meuCarrinho.removerCarrinho(meuCarrinho.itens[1].sku) */
-console.log(meuCarrinho)
-console.log(retornaTotal(meuCarrinho))
+/* console.log(meuCarrinho)
+console.log(retornaTotal(meuCarrinho)) */
