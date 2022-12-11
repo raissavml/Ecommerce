@@ -71,21 +71,21 @@
                 </li>
             </ul>
         </section>
+        <div class="d-flex carrinhoCount">
+            <p class="valueOrganizer">Subtotal</p>
+            <div class="d-flex justify-content-center aling-itens-center">
+                <p>R$</p>  
+                <p id="ValorSubtotal">0,00</p>                           
+            </div>                    
+        </div>
+        <form>
+            <div class="singleInput">
+                <label>Cupom de desconto</label>
+             <input type="text" placeholder="Caso tenha um cupom de desconto, digite aqui" id="cupomDesconto">
+            </div>
 
         <section class="dadosCarrinho">
-            <ul>
-                <div class="d-flex carrinhoCount">
-                    <p class="valueOrganizer">Subtotal</p>
-                    <div class="d-flex justify-content-center aling-itens-center">
-                        <p>R$</p>  
-                        <p id="ValorSubtotal">0,00</p>                           
-                    </div>                    
-                </div>
-                <form action="">
-                    <div class="singleInput">
-                        <label>Cupom de desconto</label>
-                     <input type="text" placeholder="Caso tenha um cupom de desconto, digite aqui" id="cupomDesconto">
-                    </div>
+            <div class="container-fluid content">
                     <div class="dubleInput">
                         <div class="organizeInput">
                             <label>CEP de entrega</label>
@@ -117,24 +117,20 @@
                         </div>
                     </div>
                 </form>
-                <div class="d-flex carrinhoCount">
-                    <p class="valueOrganizer">Frete</p>
-                    <div class="d-flex aling-itens-center">
-                        <p>R$</p>  
-                        <p id="Frete">0,00</p>                            
+                <div class="frete">
+                        <p class="valueOrganizer">Frete: R$<span id="Frete">0,00</span></p>                            
                     </div>
                
                 </div>
                 <div class="d-flex carrinhoCount total">
-                    <p class="total valueOrganizer">Total</p>
+                    <p class="total valueOrganizer">Total:</p>
                     <div class="d-flex justify-content-center aling-itens-center">
                         <p class="total">R$</p>  
                         <p class="total" id="ValorTotal">0,00</p>                          
                     </div>                    
 
                 </div>
-
-            </ul>
+            </div>
             
         </section>
     </div>

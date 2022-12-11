@@ -102,19 +102,20 @@ button:hover {
     bottom: 30px;
     text-align: center;
 }
+.organizeInput input{
+    width: 10px;
+}
 .dadosCarrinho input{
     width: 24em;
     height: 2em;
     font-size: 1.1em
-;
 }
+
 .carrinhoInput p{
     margin-right: 2em;
 }
-.dadosCarrinho{
-    margin: 5%;
-    text-align: center;
-}
+
+
 .dadosCarrinho input{
     border-radius: 60px;
     border: none;
@@ -144,6 +145,8 @@ button:hover {
 }
 .singleInput label{
     margin-right: 2em;
+    font-size: 1.6rem;
+    padding: 5px;
 }
 .dubleInput{
     display: flex;
@@ -156,15 +159,32 @@ button:hover {
 .dubleInput input{
     margin-right: 0.5em;
 }
-.organizeInput{
-    width: 40em;
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 1em;
 
+.organizeInput{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.finalizarCompra{
+    margin: 0 auto;
+}
+
+.organizeInput label{
+    font-size: 1rem;
 }
 .total{
     font-size: 1.5em;
+}
+
+.frete{
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    width: 50vw;
+    text-align: center;
 }
 
 @media screen and (max-width: 1100px) {
