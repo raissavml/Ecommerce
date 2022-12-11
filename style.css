@@ -176,19 +176,26 @@ footer img{
     100%{right: 0px;}
 }
 
-section {
-    display: flex;
-}
+.card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        padding: 2rem;
+        margin: 0 auto;
+        
+    }
 
-figure {
-    height: 420px;
-    width: 420px;
-    overflow: hidden;
+ .card figure {
     outline: 3px solid black;
-    margin: 56px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
-    border-radius: 20px 20px 20px 20px;
-}
+    background-color: #E9EDC9;
+    padding: 2rem;
+    display: block;
+    margin: 0 auto;
+} 
 
 h1 {
     color: #D4A373;
@@ -198,8 +205,7 @@ h1 {
 }
 
 figure img{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background-color: #E9EDC9;
+    max-width: 22vw;
+    max-height: 30vh;
+ 
 }
