@@ -139,6 +139,7 @@ button:hover {
 .singleInput{
     display: flex;
     justify-content: center;
+    margin-bottom: 1em;
 
 }
 .singleInput label{
@@ -147,6 +148,7 @@ button:hover {
 .dubleInput{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 1em;
 }
 .dubleInput p{
     margin-right: 1em;
@@ -158,6 +160,7 @@ button:hover {
     width: 40em;
     display:flex;
     justify-content: space-between;
+    margin-bottom: 1em;
 
 }
 .total{
