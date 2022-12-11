@@ -50,6 +50,7 @@ header a{
     font-size: 2.2em;
     margin-bottom: 0;
 }
+
 .login:hover {
     color: #FEFAE0;
     transition: 300ms;
@@ -58,6 +59,7 @@ header a{
 .menu {
     width: 40px;
 }
+
 #pesquisa {
     width: 30em;
     height: 2em;
@@ -67,13 +69,48 @@ header a{
     background-color: #FEFAE0;
     text-align: center;
 }
-.funcionalidadesHeader{
+
+.funcionalidadesHeader {
     display:flex;
     justify-content: space-between;
     margin-left: 2em;
     margin-right: 2em;
 }
 /*fim da header*/
+
+.organizacao-1 {
+    display: flex;
+    columns: row;
+}
+
+.produto-principal-img {
+    display: flex;
+}
+
+.lateral-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.parte-inferior {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.parte-inferior-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parte-inferior-footer {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+}
 
 /*começo do footer*/
 
