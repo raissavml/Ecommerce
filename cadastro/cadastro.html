@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../Login/login.css">
-    <link rel="stylesheet" type="text/css" href="../geral.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <link rel="stylesheet" type="text/css" href="../geral.css">
     <title>Fragatta</title>
 </head>
     <body>
@@ -20,7 +20,7 @@
                 </a>
             </div>
             <div class="funcionalidadesHeader">
-                <ul class="procurar" >                
+                <ul class="procurar">                
                     <a href="">
                         <img class="menu" src="../Imagens/icones/icone-menu.png" alt="icone do menu">   
                     </a>
@@ -32,17 +32,20 @@
                         <img class="icone-carrinho" src="../Imagens/icones/icone-carrinho.png" alt="icone do carrinho para acessar suas compras">   
                     </a>
                     <a class="login" href="../Login/login.html">Login</a>
-                    <a class="login" href="../cadastro/cadastro.html">Cadastre-se</a>
+                    <a class="login" href="">Cadastre-se</a>
                 </ul>
             </div>
         </header>
         <main>
-            <section>
-                <input type="text" placeholder="Login">
+            <section class="cadastro">
+                <input type="text" placeholder="exemple@exemple.com">
                 <input type="password" class="senha" placeholder="Senha">
-                    <img src="../Imagens/icones/olho1.png" class="btn">
-                <button class="button">entrar</button>
-                <a href="">esqueceu sua senha?</a>
+                <img src="../Imagens/icones/olho1.png" class="btn">
+                <input type="password" placeholder="confirmar senha">
+                <button class="button">Cadastre-se</button>
+                <div class="haveLogin">
+                    <span>já tem login? <a href="../Login/login.html" target="_blank">entre</a></span>
+                </div>
             </section>
         </main>
         <footer>
