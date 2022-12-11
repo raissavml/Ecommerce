@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+
 }
 
 
@@ -23,15 +25,33 @@ header a{
 }
 .logo {
     text-align: center;
+    padding-top: 100px;
 }
 
-.logo img{
-    width: 200px;
+.nome-logo {
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    bottom: 450px;
+    left: 0;
+}
+
+.carrinho {
+    position: absolute;
+    bottom: 450px;
+    right: 0;
 }
 
 .login {
-	font-family: 'Bebas Neue', cursive;
-    text-align: right;
+    margin: 10vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
 }
 
 .icone-carrinho {
@@ -91,6 +111,7 @@ footer img{
 }
 
 .palavras-chaves-footer {
+    color: black;
 	font-family: 'Bebas Neue', cursive;
     text-decoration: none;
     color: #D4A373;

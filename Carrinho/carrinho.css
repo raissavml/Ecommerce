@@ -140,6 +140,7 @@ button:hover {
 .singleInput{
     display: flex;
     justify-content: center;
+    margin-bottom: 1em;
 
 }
 .singleInput label{
@@ -150,6 +151,7 @@ button:hover {
 .dubleInput{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 1em;
 }
 .dubleInput p{
     margin-right: 1em;
@@ -157,6 +159,7 @@ button:hover {
 .dubleInput input{
     margin-right: 0.5em;
 }
+
 .organizeInput{
     margin-top: 1rem;
     display: flex;

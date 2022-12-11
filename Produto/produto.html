@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../Produto/produto.css">
-    <link rel="stylesheet" type="text/css" href="../geral.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Produto/produto.css">
+    <link rel="stylesheet" type="text/css" href="../geral.css">
     <title>Produto</title>
 </head>
 <body>
@@ -37,53 +38,68 @@
         </div>
     </header>
     <main>
+        <div class="organizacao-1">
+            <section class="produto-principal-img">
+                <img src="https://radio93fm.com.br/wp-content/uploads/2019/02/produto.png" alt="imagem do produto">
+            </section>
+            <section class="lateral-direita">
+                <div>
+                    <p>SKU 020181</p>
+                    <h1>Nome do Produto</h1>
+                </div>
+                <div>
+                    <h3>R$ 0,00</h2>
+                    <h3>À vista</p>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-dark">Parcelamento</button>
+                </div>
+                <div>
+                    <h3>Variação</h3>
+                    <ul>
+                        <button type="button" class="btn btn-dark">cor</button>
+                        <button type="button" class="btn btn-dark">cor</button>
+                        <button type="button" class="btn btn-dark">cor</button>
+                    </ul>
+                    <h3>Quantidade</h3>
+                    <input type="number">
+                </div>
+                <br>
+                <div>
+                    <button type="button" class="btn btn-dark">Compre agora</button>
+                    <button type="button" class="btn btn-dark">Adicionar ao carrinho</button>
+                </div>
+            </section>
+        </div>
         <section>
-            <img src="" alt="imagem do produto">
-        </section>
-        <section>
-            <div>
-                <p>SKU 020181</p>
-                <h1>Nome do Produto</h1>
-            </div>
-            <div>
-                <h3>R$ 0,00</h2>
-                <h3>À vista</p>
-            </div>
-            <div>
-                <button>Parcelamento</button>
-            </div>
-            <div>
-                <h3>Variação</h3>
-                <ul>
-                    <button>Azul</button>
-                    <button>Amarelo</button>
-                    <button>Roxo</button>
+            <div class="parte-inferior-1">
+                <h2>Descrição</h2>
+                <p class="fs-5 col-md-8">Falando sobre o produto</p>
+                <hr class="col-3 col-md-2 mb-5">
+            </div>     
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h2>Starter projects</h2>
+                    <p>Ready to beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
+                    <ul class="icon-list ps-0">
+                        <li class="d-flex align-items-start mb-1"><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+                        <li class="text-muted d-flex align-items-start mb-1">Bootstrap Parcel starter (coming soon!)</li>
+                    </ul>
+                </div>       
+                <div class="col-md-6">
+                    <h2>Guides</h2>
+                    <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+                <ul class="icon-list ps-0">
+                    <li class="d-flex align-items-start mb-1"><a href="/docs/5.2/getting-started/introduction/">Bootstrap quick start guide</a></li>
+                    <li class="d-flex align-items-start mb-1"><a href="/docs/5.2/getting-started/webpack/">Bootstrap Webpack guide</a></li>
+                    <li class="d-flex align-items-start mb-1"><a href="/docs/5.2/getting-started/parcel/">Bootstrap Parcel guide</a></li>
+                    <li class="d-flex align-items-start mb-1"><a href="/docs/5.2/getting-started/vite/">Bootstrap Vite guide</a></li>
+                    <li class="d-flex align-items-start mb-1"><a href="/docs/5.2/getting-started/contribute/">Contributing to Bootstrap</a></li>
                 </ul>
-                <h3>Quantidade</h3>
-                <input type="number">
-            </div>
-            <br>
-            <div>
-                <button>Adicionar ao carrinho</button>
-                <button>Compra agora</button>
+                </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Descrição do produto</h2>
-                <p>Texto informativo...produto</p>
-            </div>
-            <div>
-                <img src="" alt="foto do produto 1">
-                <img src="" alt="foto do produto 2">
-                <img src="" alt="foto do produto 3">
-            </div>
-            <div>
-                <h2>Especificações técnicas</h2>
-                <p>...</p>
-            </div>
-        </section>
-        <section>
+        <section class="parte-inferior-footer">
             <div>
                 <img src="" alt="icone de cartão">
                 <h2>Formas de pagamentos</h2>
@@ -114,7 +130,6 @@
             </div>
             <p id="endereco">Rua da Boa Vontade, 300. Cajuzinho - SP</p>
     </footer>
-
-    <script type="text/javascript" src="../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
