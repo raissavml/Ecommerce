@@ -10,71 +10,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../Produto/produto.css">
-    <link rel="stylesheet" type="text/css" href="../geral.css">
     <title>Produto</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../Imagens/Geral/LOGO NOVA.png" alt="Logo da loja Fragatta">
-            </a>
-        </div>
-        <div class="funcionalidadesHeader">
-            <ul class="procurar" >                
-                <a href="">
-                    <img class="menu" src="../Imagens/icones/icone-menu.png" alt="icone do menu">   
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
                 </a>
-                <img class="menu"  src="../Imagens/icones/icone-lupa.png" alt="ícone de lupa para realizar pesquisa">
-                <input id="pesquisa" type="text" placeholder="O que você está procurando?">
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link px-2 logo"><h1>FRAGATTA</h1></a></li>
             </ul>
-            <ul class="navegadores">
-                <a href="../Carrinho/carrinho.html">
-                    <img class="icone-carrinho" src="../Imagens/icones/icone-carrinho.png" alt="icone do carrinho para acessar suas compras">   
-                </a>
-                <a class="login" href="../Login/login.html">Login</a>
-                <a class="login" href="">Cadastre-se</a>
-            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Buscar..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">Login</button>
+                <button type="button" class="btn btn-warning">Cadastrar</button>
+            </div>
+            </div>
         </div>
     </header>
     <main>
-        <div class="organizacao-1">
-            <section class="produto-principal-img">
-                <img src="https://radio93fm.com.br/wp-content/uploads/2019/02/produto.png" alt="imagem do produto">
-            </section>
-            <section class="lateral-direita">
-                <div>
-                    <p>SKU 020181</p>
-                    <h1>Nome do Produto</h1>
+        <section class="row align-items-md-stretch">
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-bg-dark">
+                    <img src="https://radio93fm.com.br/wp-content/uploads/2019/02/produto.png" class="img-fluid" alt="Aqui contém a imagem do produto">
                 </div>
-                <div>
-                    <h3>R$ 0,00</h2>
-                    <h3>À vista</p>
+            </div>
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border">
+                    <div>
+                        <p>SKU 020181</p>
+                        <h1>Nome do Produto</h1>
+                    </div>
+                    <div>
+                        <h3>R$ 0,00</h2>
+                        <h3>À vista</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark">Parcelamento</button>
+                    </div>
+                    <div>
+                        <h3>Variação</h3>
+                        <ul>
+                            <button type="button" class="btn btn-dark">cor</button>
+                            <button type="button" class="btn btn-dark">cor</button>
+                            <button type="button" class="btn btn-dark">cor</button>
+                        </ul>
+                        <h3>Quantidade</h3>
+                        <input type="number">
+                    </div>
+                    <br>
+                    <div>
+                        <button type="button" class="btn btn-dark">Compre agora</button>
+                        <button type="button" class="btn btn-dark">Adicionar ao carrinho</button>
+                    </div>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-dark">Parcelamento</button>
-                </div>
-                <div>
-                    <h3>Variação</h3>
-                    <ul>
-                        <button type="button" class="btn btn-dark">cor</button>
-                        <button type="button" class="btn btn-dark">cor</button>
-                        <button type="button" class="btn btn-dark">cor</button>
-                    </ul>
-                    <h3>Quantidade</h3>
-                    <input type="number">
-                </div>
-                <br>
-                <div>
-                    <button type="button" class="btn btn-dark">Compre agora</button>
-                    <button type="button" class="btn btn-dark">Adicionar ao carrinho</button>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <section>
-            <div class="parte-inferior-1">
+            <div class="d-flex descricao">
                 <h2>Descrição</h2>
-                <p class="fs-5 col-md-8">Falando sobre o produto</p>
+                <p class="fs-5">Falando sobre o produto</p>
                 <hr class="col-3 col-md-2 mb-5">
             </div>     
             <div class="row g-5">
@@ -99,36 +101,46 @@
                 </div>
             </div>
         </section>
-        <section class="parte-inferior-footer">
-            <div>
-                <img src="" alt="icone de cartão">
-                <h2>Formas de pagamentos</h2>
-            </div>
-            <div>
-                <img src="" alt="icone de caminhão">
-                <h2>Prazo de entrega</h2>
-            </div>
-            <div>
-                <img src="" alt="icone de circulo">
-                <h2>Trocas e devoluções</h2>
+        <section>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4">Frete Grátis*</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4">Entrega Rápida</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4">Troca Grátis</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4">Sustentabilidade</h3>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <a href="../index.html">
-            <img src="../Imagens/Geral/LOGO NOVA.png" alt="Logo da loja Fragatta">
-        </a>
-        <div class="palavras-chaves-footer">
-            <ul>
-                <a class="itemFooter" href="">Newsletter</a>
-                <a class="itemFooter" href="../Contato/contato.html">Contato</a>
-                <a class="itemFooter" href="">Redes Sociais</a>
-                <a class="itemFooter" href="">Condições Legais e Privacidade</a>
-                <a class="itemFooter" href="">Carreiras</a>
-                <a class="itemFooter" href="">Mapa do Site</a>
-            </ul>    
-            </div>
-            <p id="endereco">Rua da Boa Vontade, 300. Cajuzinho - SP</p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top cor">
+        <p class="col-md-4 mb-0 text-muted">Rua da Boa Vontade, 300. Cajuzinho - SP</p>
+
+        
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
